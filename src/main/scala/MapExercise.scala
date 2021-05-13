@@ -14,6 +14,9 @@ object MapExercise extends App {
   }
 
   val reversedMap: Map[Int, String] = reverseMap(testMap)
+//  for ((k,v) <- testMap) println(s"KEY: $k -> VALUE: $v")
+//  println("*" *20)
+//  for ((k,v) <- reversedMap) println(s"KEY: $k -> VALUE: $v")
 
   //So for now we do not worry about duplicates
   //Think about how to solve the duplicate problem
