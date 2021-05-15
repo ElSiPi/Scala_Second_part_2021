@@ -1,3 +1,5 @@
+
+import scala.collection.immutable
 import scala.collection.mutable.HashMap
 import scala.util.Random
 
@@ -60,5 +62,5 @@ object Maps extends App{
   val genHashMapTime = (0 until numTests).map(_ => measureHashMap(genHashMap())).sum
   println(s"$numTests tests took $genHashMapTime nanoseconds")
 
-}
 
+}
