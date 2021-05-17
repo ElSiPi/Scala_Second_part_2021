@@ -52,8 +52,11 @@ object Crush extends App {
       val index1 = oneLineSplit(1).toInt - 1
       val index2 = oneLineSplit(2).toInt
 
-      workSeq(index0) += index2
-      workSeq(index1) += index2
+      for (n <- index0 to index1) {
+        workSeq(n) += index2
+      }
+      //workSeq(index0) += index2
+      //workSeq(index1) += index2
     }
    workSeq
   }
